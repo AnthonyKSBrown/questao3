@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Manipulando o DOM</title>
+  <script>
+    function alterarConteudo() {
+      let novoTexto = prompt("Digite um texto:");
+      
+      document.getElementById("texto").textContent = novoTexto;
+    }
+  </script>
+</head>
+<body>
+
+  <h1>Título</h1>
+  <h2>Subtítulo</h2>
+  <p id="texto">Este é um texto que pode ser trocado por outro.</p>
+  <div style="margin-top: 30px;">
+    <button onclick="alterarConteudo()">Clique para mudar o texto</button>
+  </div>
+
+</body>
+</html>
